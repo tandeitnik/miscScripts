@@ -8,6 +8,7 @@ fig, ax = plt.subplots(1,1, figsize=(7,4), sharex=False)
     
 plt.rcParams.update({'font.size': 20})
 plt.rcParams["axes.linewidth"] = 1
+plt.rcParams["font.family"] = "Times New Roman"
 
 ax.plot(xData,yData,color = colors[0], alpha = 1,lw = 4, label = "text")
 ax.set(xlabel='text')
