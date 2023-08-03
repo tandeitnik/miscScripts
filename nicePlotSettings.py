@@ -6,7 +6,7 @@ colors = [cm.viridis(x) for x in evenly_spaced_interval]
 
 fig, ax = plt.subplots(1,1, figsize=(7,4), sharex=False) #the size is in inches and the final figure has not exactly the dimension set in figsize
     
-plt.rcParams.update({'font.size': 20})
+plt.rcParams.update({'font.size': 12}) #size 12 should match the font size of the text
 plt.rcParams["axes.linewidth"] = 1
 plt.rcParams["font.family"] = "Times New Roman"
 
