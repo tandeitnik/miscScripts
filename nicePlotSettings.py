@@ -4,7 +4,7 @@ from matplotlib import cm
 evenly_spaced_interval = np.linspace(0, 1, 10)
 colors = [cm.viridis(x) for x in evenly_spaced_interval]
 
-fig, ax = plt.subplots(1,1, figsize=(7,4), sharex=False)
+fig, ax = plt.subplots(1,1, figsize=(7,4), sharex=False) #the size is in inches and the final figure has not exactly the dimension set in figsize
     
 plt.rcParams.update({'font.size': 20})
 plt.rcParams["axes.linewidth"] = 1
@@ -24,3 +24,5 @@ plt.xlim(minX,maxX)
 plt.ylim(minY,maxY)
 fig.tight_layout()
 fig.subplots_adjust(hspace=0.1)
+
+plt.savefig("myImagePDF.pdf", format="pdf", bbox_inches="tight")
