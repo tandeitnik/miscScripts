@@ -9,7 +9,7 @@ fig, ax = plt.subplots(1,1, figsize=(7,4), sharex=False) #the size is in inches 
 plt.rcParams.update({
     "text.usetex": True,
     "font.family": "Times New Roman",
-    'font.size': 12
+    'font.size': 10
 })
 
 plt.rcParams["axes.linewidth"] = 1
