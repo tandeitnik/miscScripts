@@ -4,7 +4,7 @@ from matplotlib import cm
 evenly_spaced_interval = np.linspace(0, 1, 10)
 colors = [cm.viridis(x) for x in evenly_spaced_interval]
 
-fig, ax = plt.subplots(1,1, figsize=(7,4), sharex=False) #the size is in inches and the final figure has not exactly the dimension set in figsize
+fig, ax = plt.subplots(1,1, figsize=(7,4), sharex=False,constrained_layout=True) #the size is in inches and the final figure has not exactly the dimension set in figsize
     
 plt.rcParams.update({
     "text.usetex": True,
